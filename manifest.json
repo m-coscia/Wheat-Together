@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Agricultural Weather Tracker",
+  "version": "1.0",
+  "description": "Real-time weather updates for agricultural regions.",
+  "permissions": [
+    "geolocation",
+    "storage",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}

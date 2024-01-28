@@ -1,0 +1,11 @@
+body {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #weather-container {
+    text-align: center;
+  }
+  

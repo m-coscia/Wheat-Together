@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <title>Agricultural Weather Tracker</title>
+</head>
+<body>
+  <div>
+    <label for="location">Select Location:</label>
+    <select id="location">
+      <option value="49.0504,122.3045" data-specialty="Dairy Farming, Poultry Production, Greenhouse Vegetables">Abbotsford</option>
+      <option value="45.0915,64.3628" data-specialty="Fruit Orchards (Apples, Grapes)">Annapolis Valley</option>
+      <option value="45.2000,71.7500" data-specialty="Dairy Farming, Apple Orchards">Eastern Townships</option>
+      <option value="44.1085,79.5911" data-specialty="Vegetable Farming (Carrots, Onions, Celery)">Holland Marsh</option>
+      <option value="49.8879,119.4960" data-specialty="Fruit Production (Apples, Grapes)">Kelowna</option>
+      <option value="49.1036,122.6616" data-specialty="Livestock, Crop Farming">Langley</option>
+      <option value="45.3500, 73.5000" data-specialty="Diverse Agriculture">Montérégie</option>
+      <option value="43.1594,79.2469" data-specialty="Fruit Orchards (Apples, Peaches)">Niagara Peninsula</option>
+      <option value="42.8304,80.4574" data-specialty="Vegetable Farming (Tomatoes, Peppers, Cucumbers)">Norfolk County</option>
+      <option value="46.5107,63.4168" data-specialty="Potato Farming, Mixed Farming">Prince Edward Island</option>
+      <option value="50.4000,104.6000" data-specialty="Grain and Oilseed Production (Wheat, Barley, Canola), Cattle Farming">Regina</option>
+      <option value="52.1000,106.7000" data-specialty="Grain and Oilseed Production, Cattle Farming">Saskatoon</option>
+      <option value="50.0000,113.4000" data-specialty="Cattle Ranching, Crop Farming (Wheat, Barley)">Southern Alberta</option>
+    </select>
+  </div>
+
+  <div id="weather-container">
+    <h2>Weather Information</h2>
+    <p id="temperature"></p>
+    <p id="description"></p>
+    <p id="agricultural-specialty"></p>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
