@@ -1,0 +1,18 @@
+{
+  "name": "Trigger Warning",
+  "description": "Find the different triggers in a page",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "key": "42db2dac5d79a345d0e18b44ffc18790b9dac1af"
+}
