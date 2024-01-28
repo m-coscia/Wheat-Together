@@ -1,11 +1,80 @@
 body {
     width: 200px;
-    height: 200px;
+    height: 260px;
     padding: 10px;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    /* font-family: 'Red Hat Text', sans-serif; */
+    background-image: url(background.png);
   }
+
+  #translate-button {
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    border:none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;;
+  }
+
+  #temperature, #agricultural-specialty, #description {
+    font-size: 1.1em;
+  }
+
+  #select-location-label, #location {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #select-location-label {
+    padding-bottom: 8px;
+  }
+
   
   #weather-container {
     text-align: center;
   }
+
+  div label{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  select {
+    border:none;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+      
+  }
+
+  div#glass {
+    background: rgba(255, 255, 255, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    margin: -5px;
+    height: 255px;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
   
+  
+  
+  
+
+
