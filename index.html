@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="popup.css">
-  <title>Agricultural Weather Tracker</title>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <title>Wheat Together</title>
 </head>
 <body>
-  <div>
-    <label for="location">Select Location:</label>
+  <div id="glass">
+    <div>
+    <label for="location" id="select-location-label">Select Location:</label>
     <select id="location">
       <option value="49.0504,122.3045" data-specialty="Dairy Farming, Poultry Production, Greenhouse Vegetables">Abbotsford</option>
       <option value="45.0915,64.3628" data-specialty="Fruit Orchards (Apples, Grapes)">Annapolis Valley</option>
@@ -24,15 +29,22 @@
       <option value="52.1000,106.7000" data-specialty="Grain and Oilseed Production, Cattle Farming">Saskatoon</option>
       <option value="50.0000,113.4000" data-specialty="Cattle Ranching, Crop Farming (Wheat, Barley)">Southern Alberta</option>
     </select>
-  </div>
+  
 
   <div id="weather-container">
-    <h2>Weather Information</h2>
+    <h2 id="weather-info-heading">Weather Information</h2>
     <p id="temperature"></p>
     <p id="description"></p>
     <p id="agricultural-specialty"></p>
   </div>
-  
+
+<!-- translation AI-->
+  <div>
+    <button id="translate-button">Translate</button>
+    <p id="translated-content"></p>
+  </div>
+</div>
+</div> 
   <script src="popup.js"></script>
 </body>
 </html>
