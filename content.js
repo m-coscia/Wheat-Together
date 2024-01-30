@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
 function translatePopupContent(sendResponse) {
   console.log('Translating content...');
-  const apiKey = 'AIzaSyD-7ejUvyVOGTqQ-DFOLUQ1et1qIgo2wKM';
+  const apiKey = "API_KEY"; 
 
   // updates the content of specific elements with the translated text
   const temperatureElement = document.getElementById('temperature');
